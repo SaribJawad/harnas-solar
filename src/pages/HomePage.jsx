@@ -6,7 +6,7 @@ import TestimonialsSection from "../components/sections/TestimonialsSection";
 
 function HomePage() {
   return (
-    <div className="bg-[#4169e1] h-full w-full">
+    <div className="bg-[#E1E5DC] h-full w-full">
       <HeroSection />
       <ProductsSection />
       <BenefitsSection />
