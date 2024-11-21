@@ -22,11 +22,11 @@ function AboutUsPage() {
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
                 Founded in 2010 by a group of passionate environmental
-                engineers, SolarTech Solutions emerged from a simple yet
-                powerful vision: to revolutionize the way communities access and
-                utilize renewable energy. What began in a small garage in
-                Silicon Valley has now grown into a national leader in solar
-                technology and sustainable energy solutions.
+                engineers, Harness Solars emerged from a simple yet powerful
+                vision: to revolutionize the way communities access and utilize
+                renewable energy. What began in a small garage in Silicon Valley
+                has now grown into a national leader in solar technology and
+                sustainable energy solutions.
               </p>
 
               <p>
@@ -41,10 +41,10 @@ function AboutUsPage() {
               </p>
 
               <p>
-                Today, SolarTech Solutions continues to push the boundaries of
-                solar innovation. We're not just a solar panel company – we're a
-                team dedicated to creating a sustainable future, one rooftop at
-                a time. Our commitment goes beyond technology; we're building a
+                Today, Harness Solars continues to push the boundaries of solar
+                innovation. We're not just a solar panel company – we're a team
+                dedicated to creating a sustainable future, one rooftop at a
+                time. Our commitment goes beyond technology; we're building a
                 global movement towards cleaner, greener, and more responsible
                 energy consumption.
               </p>
