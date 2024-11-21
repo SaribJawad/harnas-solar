@@ -49,7 +49,7 @@ function HeroSection() {
       ))}
 
       {/* Overlay to improve text readability */}
-      <div className="absolute inset-0 bg-black/30 z-10"></div>
+      <div className="absolute inset-0 bg-[#01322267] z-10"></div>
 
       <div className="relative z-20 w-full text-white flex flex-col items-center text-center">
         <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-bold mb-4 drop-shadow-lg">
