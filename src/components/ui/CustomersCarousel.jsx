@@ -7,9 +7,9 @@ import Face from "../../assets/faces/Face.jpeg";
 import Face1 from "../../assets/faces/Face1.jpeg";
 import Face2 from "../../assets/faces/Face2.jpeg";
 import Face3 from "../../assets/faces/Face3.jpeg";
-import Face4 from "../../assets/faces/Face4.jpeg";
-import Face5 from "../../assets/faces/Face5.jpeg";
-import Face6 from "../../assets/faces/Face6.jpeg";
+import Face4 from "../../assets/faces/face4.jpeg";
+import Face5 from "../../assets/faces/face5.jpeg";
+import Face6 from "../../assets/faces/face6.jpeg";
 
 function TestimonialSlider() {
   const settings = {
