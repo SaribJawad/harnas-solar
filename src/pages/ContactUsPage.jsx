@@ -42,26 +42,26 @@ function ContactUsPage() {
   const position = [40.7128, -74.006];
 
   return (
-    <section className="container mx-auto px-4 py-16 lg:px-8 bg-[#DDDCDC] ">
+    <section className="container mx-auto px-4 py-16 lg:px-8  ">
       <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-white shadow-lg rounded-lg p-8 space-y-6">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
 
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
-              <MapPin className="text-[#4169E1] h-6 w-6" />
+              <MapPin className="text-[#046200] h-6 w-6" />
               <span className="text-gray-700">
                 123 Business Street, New York, NY
               </span>
             </div>
 
             <div className="flex items-center space-x-4">
-              <Mail className="text-[#4169E1] h-6 w-6" />
+              <Mail className="text-[#046200] h-6 w-6" />
               <span className="text-gray-700">info@harnesssolars.com</span>
             </div>
 
             <div className="flex items-center space-x-4">
-              <Phone className="text-[#4169E1] h-6 w-6" />
+              <Phone className="text-[#046200] h-6 w-6" />
               <span className="text-gray-700">+1 (555) 123-4567</span>
             </div>
           </div>
@@ -151,7 +151,7 @@ function ContactUsPage() {
 
           <button
             type="submit"
-            className="w-full bg-[#4169E1] text-white  py-3 rounded-md  transition duration-300   "
+            className="w-full bg-[#004D14] text-white  py-3 rounded-md  transition duration-300   "
           >
             Send Message
           </button>

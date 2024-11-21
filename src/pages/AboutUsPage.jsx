@@ -15,7 +15,7 @@ function AboutUsPage() {
           </div>
 
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#4169E1] mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#046200] mb-6">
               About Our Company
             </h2>
 
@@ -52,7 +52,7 @@ function AboutUsPage() {
 
             <div className="grid md:grid-cols-3 gap-4 mt-8">
               <div className="bg-white p-4 rounded-lg shadow-md text-center">
-                <Goal className="mx-auto text-[#4169E1] mb-2" size={40} />
+                <Goal className="mx-auto text-[#046200] mb-2" size={40} />
                 <h3 className="font-semibold text-gray-800">Mission</h3>
                 <p className="text-sm text-gray-600">
                   Sustainable Energy Solutions
@@ -60,13 +60,13 @@ function AboutUsPage() {
               </div>
 
               <div className="bg-white p-4 rounded-lg shadow-md text-center">
-                <Award className="mx-auto text-[#4169E1] mb-2" size={40} />
+                <Award className="mx-auto text-[#046200] mb-2" size={40} />
                 <h3 className="font-semibold text-gray-800">Vision</h3>
                 <p className="text-sm text-gray-600">Global Green Revolution</p>
               </div>
 
               <div className="bg-white p-4 rounded-lg shadow-md text-center">
-                <Users className="mx-auto text-[#4169E1] mb-2" size={40} />
+                <Users className="mx-auto text-[#046200] mb-2" size={40} />
                 <h3 className="font-semibold text-gray-800">Team</h3>
                 <p className="text-sm text-gray-600">50+ Energy Experts</p>
               </div>

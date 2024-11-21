@@ -6,6 +6,15 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+      keyframes: {
+        heroZoom: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.1)" },
+        },
+      },
+      animation: {
+        "hero-zoom": "heroZoom 5s linear",
+      },
     },
   },
   plugins: [],

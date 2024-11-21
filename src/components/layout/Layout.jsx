@@ -5,7 +5,7 @@ import Footer from "../ui/Footer";
 
 function Layout() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#DDDCDC]">
+    <div className="flex flex-col min-h-screen bg-[#E1E5DC]">
       <Header />
       <main className="flex-grow">
         <Outlet />

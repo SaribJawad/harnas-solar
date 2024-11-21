@@ -34,9 +34,9 @@ function ProductsSection() {
   ];
 
   return (
-    <section className=" bg-[#4169E1] w-full xl:p-16 lg:p-12 md:p-10   flex flex-col items-center gap-10 py-5">
+    <section className=" bg-[#E1E5DC] w-full xl:p-16 lg:p-12 md:p-10   flex flex-col items-center gap-10 py-5">
       <div className="w-full flex justify-center ">
-        <h2 className="font-semibold xl:text-5xl lg:text-4xl md:text-3xl text-[22px]  text-[#FBD704]">
+        <h2 className="font-semibold xl:text-5xl lg:text-4xl md:text-3xl text-[22px]  text-[#046200]">
           Our Solar Products
         </h2>
       </div>

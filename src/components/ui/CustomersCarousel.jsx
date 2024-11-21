@@ -101,7 +101,7 @@ function TestimonialSlider() {
             >
               <div className="bg-white shadow-lg rounded-lg p-6 md:p-8">
                 <Quote
-                  className="mx-auto text-[#4169E1] mb-4"
+                  className="mx-auto text-[#046200] mb-4"
                   size={40}
                   strokeWidth={1.5}
                 />

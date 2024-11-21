@@ -10,7 +10,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-[#4169E1] text-white py-12">
+    <footer className="bg-[#013222] text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -112,7 +112,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-1 md:col-span-4 border-t border-blue-700 pt-6 mt-6 text-center">
+          <div className="col-span-1 md:col-span-4 border-t border-[#E1E5DC] pt-6 mt-6 text-center">
             <p className="text-sm">
               © 2024 Harness Solers. All Rights Reserved.
             </p>
