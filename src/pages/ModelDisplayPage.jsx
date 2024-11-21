@@ -109,10 +109,10 @@ function ModelDisplayPage() {
               <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4">
                 Solar System
               </h1>
-              <p className="text-sm md:text-xl text-white/80 max-w-xl">
-                Explore our incredible solar system in stunning 3D detail.
-                Interact with the model to discover more.
-              </p>
+              <ul className="text-white/80 md:text-md text-sm space-y-2">
+                <li>• Drag to rotate the view</li>
+                <li>• Scroll to zoom in/out</li>
+              </ul>
             </div>
           </div>
 
@@ -120,7 +120,7 @@ function ModelDisplayPage() {
           <div className="flex-grow" />
 
           {/* Bottom Section */}
-          <div className="pointer-events-auto">
+          {/* <div className="pointer-events-auto">
             <div className="bg-black/30 backdrop-blur-sm p-4 rounded-lg max-w-xl">
               <h2 className="text-xl md:text-xl font-semibold text-white mb-2">
                 Interactive Controls
@@ -130,7 +130,7 @@ function ModelDisplayPage() {
                 <li>• Scroll to zoom in/out</li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
