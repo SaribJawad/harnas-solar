@@ -107,7 +107,7 @@ function ModelDisplayPage() {
           <div className="w-full flex flex-col items-start gap-5 bg-black/30 backdrop-blur-sm">
             <div className="pointer-events-auto">
               <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4">
-                Solar System
+                Solar Panel 180 Watts
               </h1>
               <ul className="text-white/80 md:text-md text-sm space-y-2">
                 <li>• Drag to rotate the view</li>
