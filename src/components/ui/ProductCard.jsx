@@ -18,7 +18,7 @@ function ProductCard({ solar }) {
         <button className="lg:block hidden border border-black rounded-full px-2 py-1 text-xs transform transition-all duration-300 hover:bg-[#046200] hover:border-[#046200] hover:text-white">
           View details
         </button>
-        <button className="lg:hidden block border border-black rounded-full p-1  text-xs transform transition-all duration-300 hover:bg-[#4169E1] hover:border-[#4169E1] hover:text-white">
+        <button className="lg:hidden block border border-black rounded-full p-1  text-xs transform transition-all duration-300 hover:bg-[#046200] hover:border-[#046200] hover:text-white">
           <ArrowUpRight size={15} />
         </button>
       </div>
