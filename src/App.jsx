@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import { Scrollbars } from "react-custom-scrollbars-2";
+import ModelDisplayPage from "./pages/ModelDisplayPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about_us" element={<AboutUsPage />} />
           <Route path="/contact_us" element={<ContactUsPage />} />
         </Route>
+        <Route path="/model-display" element={<ModelDisplayPage />} />
       </Routes>
     </Scrollbars>
   );

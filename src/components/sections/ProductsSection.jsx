@@ -1,13 +1,13 @@
 import React from "react";
 import ProductCard from "../ui/ProductCard";
+import Solar from "../../assets/solar.png";
 
 function ProductsSection() {
   const products = [
     {
       solarType: "MONOCRYSTALLINE",
       solar: "Solar Panel 180 Watts Mono Crystalline",
-      solarImage:
-        "https://emaratisolar.com/wp-content/uploads/2023/12/Fsolar-Osun-180-W-1-300x300.png",
+      solarImage: Solar,
       price: 500,
     },
     {
