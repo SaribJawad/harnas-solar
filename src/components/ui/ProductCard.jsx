@@ -3,7 +3,7 @@ import React from "react";
 
 function ProductCard({ solar }) {
   return (
-    <div className="  bg-[#F5F5F5] flex flex-col justify-between  lg:p-4 p-2  transform  transition-all duration-300 hover:scale-[1.03] rounded-md hover:rounded-none">
+    <div className="  bg-white flex flex-col justify-between  lg:p-4 p-2  transform  transition-all duration-300 hover:scale-[1.03] rounded-md hover:rounded-none">
       <div className="flex flex-col gap-1 ">
         <h2 className="text-xs sm:text-sm text-center text-[#4169E1]">
           {solar.solarType}
