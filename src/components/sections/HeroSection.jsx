@@ -58,7 +58,7 @@ function HeroSection() {
         <p className="lg:text-xl md:text-md text-sm mb-6 drop-shadow-md">
           Unlock limitless energy with cutting-edge solar solutions.
         </p>
-        <button className="hover:bg-[#013222] border-2 transform hover:border-[#013222] transition-all duration-300 hover:text-white border-white bg-transparent lg:text-md text-sm lg:px-5 px-4 lg:py-3 py-2 rounded-full font-semibold text-white">
+        <button className="hover:bg-white border-2 transform  transition-all duration-300 hover:text-black border-white bg-transparent lg:text-md text-sm lg:px-5 px-4 lg:py-3 py-2 rounded-full font-semibold text-white">
           Learn More
         </button>
       </div>
