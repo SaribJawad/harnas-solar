@@ -57,7 +57,7 @@ function ContactUsPage() {
 
             <div className="flex items-center space-x-4">
               <Mail className="text-[#4169E1] h-6 w-6" />
-              <span className="text-gray-700">contact@company.com</span>
+              <span className="text-gray-700">info@harnesssolars.com</span>
             </div>
 
             <div className="flex items-center space-x-4">
