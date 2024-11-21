@@ -1,7 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ProductCard({ solar }) {
+  const navigate = useNavigate();
+
   return (
     <div className="  bg-white flex flex-col justify-between  lg:p-4 p-2  transform  transition-all duration-300 hover:scale-[1.03] rounded-md hover:rounded-none">
       <div className="flex flex-col gap-1 ">
@@ -15,10 +18,16 @@ function ProductCard({ solar }) {
         <span className="sm:text-md text-sm text-red-700 font-semibold">
           ${solar.price}.00
         </span>
-        <button className="lg:block hidden border border-black rounded-full px-2 py-1 text-xs transform transition-all duration-300 hover:bg-[#046200] hover:border-[#046200] hover:text-white">
-          View details
+        <button
+          onClick={() => navigate("/model-display")}
+          className="lg:block hidden border border-black rounded-full px-2 py-1 text-xs transform transition-all duration-300 hover:bg-[#046200] hover:border-[#046200] hover:text-white"
+        >
+          View model
         </button>
-        <button className="lg:hidden block border border-black rounded-full p-1  text-xs transform transition-all duration-300 hover:bg-[#046200] hover:border-[#046200] hover:text-white">
+        <button
+          onClick={() => navigate("/model-display")}
+          className="lg:hidden block border border-black rounded-full p-1  text-xs transform transition-all duration-300 hover:bg-[#046200] hover:border-[#046200] hover:text-white"
+        >
           <ArrowUpRight size={15} />
         </button>
       </div>
