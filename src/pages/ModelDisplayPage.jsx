@@ -103,15 +103,17 @@ function ModelDisplayPage() {
     <div className="relative  w-full h-screen">
       <div className="absolute inset-0 z-10 p-6 pointer-events-none">
         {/* Top Section */}
-        <div className="flex flex-col h-full">
-          <div className="pointer-events-auto">
-            <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4">
-              Solar System
-            </h1>
-            <p className="text-sm md:text-xl text-white/80 max-w-xl">
-              Explore our incredible solar system in stunning 3D detail.
-              Interact with the model to discover more.
-            </p>
+        <div className="flex flex-col h-full ">
+          <div className="w-full flex flex-col items-start gap-5 bg-black/30 backdrop-blur-sm">
+            <div className="pointer-events-auto">
+              <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4">
+                Solar System
+              </h1>
+              <p className="text-sm md:text-xl text-white/80 max-w-xl">
+                Explore our incredible solar system in stunning 3D detail.
+                Interact with the model to discover more.
+              </p>
+            </div>
           </div>
 
           {/* Middle Section (empty to allow model interaction) */}
