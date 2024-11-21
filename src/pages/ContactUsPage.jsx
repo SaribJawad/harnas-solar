@@ -49,19 +49,19 @@ function ContactUsPage() {
 
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
-              <MapPin className="text-indigo-600 h-6 w-6" />
+              <MapPin className="text-[#4169E1] h-6 w-6" />
               <span className="text-gray-700">
                 123 Business Street, New York, NY
               </span>
             </div>
 
             <div className="flex items-center space-x-4">
-              <Mail className="text-indigo-600 h-6 w-6" />
+              <Mail className="text-[#4169E1] h-6 w-6" />
               <span className="text-gray-700">contact@company.com</span>
             </div>
 
             <div className="flex items-center space-x-4">
-              <Phone className="text-indigo-600 h-6 w-6" />
+              <Phone className="text-[#4169E1] h-6 w-6" />
               <span className="text-gray-700">+1 (555) 123-4567</span>
             </div>
           </div>
