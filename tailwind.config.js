@@ -15,7 +15,14 @@ export default {
       animation: {
         "hero-zoom": "heroZoom 5s linear",
       },
+      scrollbar: {
+        DEFAULT: {
+          width: "8px",
+          track: "transparent",
+          thumb: "rounded bg-gray-400/50 hover:bg-gray-500/70",
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
