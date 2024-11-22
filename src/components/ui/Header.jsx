@@ -43,13 +43,13 @@ function Header() {
         <img width={45} src={logo} alt="" />
       </div>
 
-      <div className="flex items-center gap-3 md:hidden">
+      <div className="flex items-center gap-5 md:hidden">
         <Link to="/cart">
           <button className=" relative  p-[5px] rounded-full text-white   ">
             <ShoppingCart size={20} strokeWidth={2} />
             {cart.length >= 1 && (
-              <span className="bg-[#FFD700] h-4 w-4 flex items-center justify-center top-[-4px] right-[-5px] rounded-full  text-black text-xs font-semibold absolute">
-                {cart.length}
+              <span className="bg-[#FFD700] h-5 w-5 flex items-center justify-center top-[-8px] right-[-10px] rounded-full  text-black text-[10px] font-semibold absolute">
+                {/* {cart.length} */}1
               </span>
             )}
           </button>
