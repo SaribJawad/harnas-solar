@@ -48,7 +48,7 @@ function Header() {
           <button className=" relative  p-[5px] rounded-full text-white   ">
             <ShoppingCart size={20} strokeWidth={2} />
             {cart.length >= 1 && (
-              <span className="bg-[#FFD700] h-4 w-4 flex items-center justify-center top-[-4px] right-[-5px] rounded-full  text-black text-sm font-semibold absolute">
+              <span className="bg-[#FFD700] h-4 w-4 flex items-center justify-center top-[-4px] right-[-5px] rounded-full  text-black text-xs font-semibold absolute">
                 {cart.length}
               </span>
             )}
