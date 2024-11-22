@@ -6,6 +6,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import ModelDisplayPage from "./pages/ModelDisplayPage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/about_us" element={<AboutUsPage />} />
           <Route path="/contact_us" element={<ContactUsPage />} />
+          <Route path="/cart" element={<CartPage />} />
         </Route>
         <Route path="/model-display" element={<ModelDisplayPage />} />
       </Routes>

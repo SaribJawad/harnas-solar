@@ -1,25 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, ShoppingCart, X } from "lucide-react";
 import logo from "../../assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
+import { useCart } from "../../context/Cart";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { cart } = useCart();
+
+  console.log(cart.length);
 
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
-    // Disable scrolling when the menu is open
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
 
-    // Cleanup to avoid side effects
     return () => {
       document.body.style.overflow = "";
     };
@@ -36,12 +38,22 @@ function Header() {
   };
 
   return (
-    <header className="bg-[#013222] p-3 flex items-center justify-between relative px-8">
-      <div>
+    <header className="bg-[#013222] p-3 flex items-center justify-between relative px-4 md:px-8">
+      <div className="flex-shrink-0">
         <img width={45} src={logo} alt="" />
       </div>
 
-      <div className="md:hidden">
+      <div className="flex items-center gap-3 md:hidden">
+        <Link to="/cart">
+          <button className="border-2 relative border-white p-[5px] rounded-full text-white hover:bg-white hover:text-black hover:border-white">
+            <ShoppingCart size={15} />
+            {cart.length >= 1 && (
+              <span className="bg-[#FFD700] h-5 w-5 flex items-center justify-center top-[-10px] right-[-13px] rounded-full  text-black text-sm font-semibold absolute">
+                {cart.length}
+              </span>
+            )}
+          </button>
+        </Link>
         <button onClick={toggleMenu} className="focus:outline-none">
           {isMenuOpen ? (
             <X size={24} strokeWidth={2.7} color="#F5F5F5" />
@@ -51,7 +63,7 @@ function Header() {
         </button>
       </div>
 
-      <nav className="hidden md:flex gap-10 ">
+      <nav className="hidden md:flex gap-10">
         {NavList.map((list, index) => {
           return (
             <Link
@@ -68,9 +80,9 @@ function Header() {
           );
         })}
       </nav>
-      {/* md:hidden fixed inset-0 bg-black z-20 flex flex-col items-center justify-center */}
+
       {isMenuOpen && (
-        <nav className="z-50 md:hidden fixed inset-0    bg-[#013222] flex flex-col items-center justify-center gap-8 py-4 shadow-lg">
+        <nav className="z-50 md:hidden fixed inset-0 bg-[#013222] flex flex-col items-center justify-center gap-8 py-4 shadow-lg">
           <button
             className="absolute top-5 right-5 text-white"
             onClick={toggleMenu}
@@ -92,15 +104,27 @@ function Header() {
               </Link>
             );
           })}
-          <button className="bg-transparent border-2 transform transition-all duration-300 border-white text-white  hover:bg-white text-sm px-4 py-2 rounded-full font-semibold hover:text-black ">
+          <button className="bg-transparent border-2 transform transition-all duration-300 border-white text-white hover:bg-white text-sm px-4 py-2 rounded-full font-semibold hover:text-black">
             Get a Quote
           </button>
         </nav>
       )}
 
-      <button className="hidden md:block transform transition-all duration-300 bg-transparent text-white hover:bg-white border-2 border-white hover:text-black hover:border-white  text-sm px-4 py-2 rounded-full font-semibold">
-        Get a Quote
-      </button>
+      <div className="hidden md:flex items-center gap-2">
+        <button className="transform transition-all duration-300 bg-transparent text-white hover:bg-white border-2 border-white hover:text-black hover:border-white text-sm px-4 py-2 rounded-full font-semibold">
+          Get a Quote
+        </button>
+        <Link to="/cart">
+          <button className="border-2 relative border-white p-[9px] rounded-full text-white hover:bg-white hover:text-black hover:border-white">
+            <ShoppingCart size={18} />
+            {cart.length >= 1 && (
+              <span className="bg-[#FFD700] h-6 w-6 flex items-center justify-center top-[-8px] right-[-15px] rounded-full  text-black text-sm font-semibold absolute">
+                {cart.length}
+              </span>
+            )}
+          </button>
+        </Link>
+      </div>
     </header>
   );
 }
